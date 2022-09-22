@@ -1,4 +1,4 @@
-# FLAG QUIZ
+# FLAG QUIZ [visit](https://flag-q.netlify.app/)
 
 A quiz game made with [React](https://create-react-app.dev/). Open the page on the web and you presented a flag of a random country, four choices among which you have to choose one that flag belongs to within 20 seconds. Each time you make a wrong choice, you lose 10 seconds, untill your time is up, then you get your result. Each time you answer correctly you gain 3 points, which later, can be used to some question. 5 points for skipping.
 
