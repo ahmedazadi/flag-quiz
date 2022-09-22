@@ -56,6 +56,8 @@ export default function Content({ data }) {
       setSecs((prev) => prev + 1);
     }, 1000);
 
+    setAlert(false);
+
     // at the end of useEffect, a function should be returned
     return () => clearInterval(interval);
 
@@ -174,7 +176,7 @@ export default function Content({ data }) {
                       // then take him to the next level
                       setLevel((prev) => prev + 1);
                       // subtract five points from score
-                      setScore((prev) => prev - 15);
+                      setScore((prev) => prev - 5);
                     } else {
                       // alert should be true for a period of time in order show the alert message
                       setAlert(true);
@@ -190,7 +192,7 @@ export default function Content({ data }) {
               ) : (
                 <Alert variant="danger" className="mt-3" id="alert">
                   Sorry, you don't have enough Score to pass a question. In
-                  order to pass one question you must have at least 15 points
+                  order to pass one question you must have at least 5 points
                 </Alert>
               )}
             </Row>
