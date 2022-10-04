@@ -159,7 +159,7 @@ export default function Content({ data }) {
                       }
                     }}
                   >
-                    {value.name.official}
+                    {value.name.common}
                   </Button>
                 );
               })}
